@@ -32,7 +32,7 @@ jobs:
       if: github['ref'] == 'refs/heads/master'
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        PARN_TOKEN: ${{ secrets.PARN_TOKEN }}
+        YARN_TOKEN: ${{ secrets.YARN_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       run: npm run semantic-release
            yarn run semantic-release
